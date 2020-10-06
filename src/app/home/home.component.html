@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Total Response Data</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>UserId</th>
+        <th>Id</th>
+        <th>Title</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let g of data" [routerLink]="['/home2',g.userId]">
+        <td>{{g.userId}}</td>
+        <td>{{g.id}}</td>
+        <td>{{g.title}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
